@@ -23,51 +23,46 @@ Task 2 - Calculate the sum of the numbers
 Your task is to write a program which asks the user three times for a number and prints the sum of those numbers.
 """
 
-# FirstNumber = int(input('This calculator adds any three given numbers. Please type in the first number.: '))
 
-# if FirstNumber == int or float:
-    
-#     SecondNumber = int(input("Please type in the second number.: " ))
-    
-#     if SecondNumber == int or float:
-        
-#         ThirdNumber = int(input("Please type in the third number.: " ))
-        
-#         if ThirdNumber == int or float:
-#             print("The result is : ", FirstNumber + SecondNumber + ThirdNumber)
-                
-# try:
-    # FirstNumber = int(input('This calculator adds any three given numbers. Please type in the first number.: '))
+# def get_number(prompt):
+#     value = input(prompt)
+#     try:
+#         return int(value)
+#     except ValueError:
+#         try:
+#             return float(value)
+#         except ValueError:
+#             print('Please enter a valid number!')
 
-    # if FirstNumber == int or float:
-        
-    #     SecondNumber = int(input("Please type in the second number.: " ))
-        
-    #     if SecondNumber == int or float:
-            
-    #         ThirdNumber = int(input("Please type in the third number.: " ))
-            
-    #         if ThirdNumber == int or float:
-    #             print("The result is : ", FirstNumber + SecondNumber + ThirdNumber)
-                
+# FirstNumber = get_number('This calculator adds any three given numbers. Please type in a first number.: ')
 
-# except:
-#     FirstNumber = float(input('This calculator adds any three given numbers. Please type in the first number.: '))
+# while not isinstance(FirstNumber, (int, float)):
+#     try:
+#         FirstNumber = get_number('This calculator adds any three given numbers. Please type in a first number.: ')
+#     except ValueError:
+#         print('Please enter a valid number!')
+        
+# SecondNumber = get_number('Please type in a second number.: ')
 
-#     if FirstNumber == int or float:
+# while not isinstance(SecondNumber, (int, float)):
+#     try:
+#         SecondNumber = get_number('Please type in a second number.: ')
+#     except ValueError:
+#         print('Please enter a valid number!')
+
+# ThirdNumber = get_number('Please type in a third number.: ')
+
+# while not isinstance(ThirdNumber, (int, float)):
+#     try:
+#         ThirdNumber = get_number('Please type in a third number.: ')
+#     except ValueError:
+#         print('Please enter a valid number!')
         
-#         SecondNumber = float(input("Please type in the second number.: " ))
-        
-#         if SecondNumber == int or float:
-            
-#             ThirdNumber = float(input("Please type in the third number.: " ))
-            
-#             if ThirdNumber == int or float:
-#                 print("The result is : ", FirstNumber + SecondNumber + ThirdNumber)
-                
-# except ValueError: 
-#     print('That was not a valid number. Pleas type in an integer or float.')
-    
+# result = FirstNumber + SecondNumber + ThirdNumber
+
+# print("The result is : ",  result)
+
+
 
 
 """
@@ -119,3 +114,6 @@ Your task is to write a program which asks the user for a number and prints if a
 
 # if not Num < 0 and not Num % 2 ==0 and Num % 7 ==0:
 #     print(Num, "is positive, odd and  divisible by 7")
+
+
+

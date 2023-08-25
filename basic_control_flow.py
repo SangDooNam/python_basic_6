@@ -2,26 +2,47 @@
 Task 1 - basic math operations
 Your task is to write a program which asks the user three times for a number. If number is even print ‘Even number’, else print ‘Odd number’.
 """
-# while True:
-#     try:
-#         odd_and_even_discriminator = int(input("Let's find out if the number is even or odd. Type in any number plaese. : "))
 
-
-#         if odd_and_even_discriminator % 2 == 0:
-#             print('This number is even')
-#         else:
-#             print('This number is odd')
-            
-#         break
-#     except ValueError: 
-#         print('That was not a valid number. Pleas type in an integer.')
         
+# def intORfloat(prompt):
+#     while True:
+#         value = input(prompt)
+#         try:
+#             return int(value)
+#         except ValueError:
+#             try:
+#                 return float(value)
+#             except ValueError:
+#                 print('Enter a valid number !')
+
+
+# for i in range(3):
+    
+#     odd_and_even_discriminator = intORfloat("Let's find out if the number is even or odd. Type in any number plaese. : ")
+
+#     if odd_and_even_discriminator % 2 == 0:
+#         print('This number is even')
+#     else:
+#         print('This number is odd')
+
 
 
 """
 Task 2 - Calculate the sum of the numbers
 Your task is to write a program which asks the user three times for a number and prints the sum of those numbers.
 """
+
+# sum = 0
+
+# for i in range(3):
+    
+#     num = int(input('Enter number: '))
+    
+#     sum += num
+
+# print('Sum of the numbers: ', sum)
+
+
 
 
 # def get_number(prompt):
@@ -65,10 +86,27 @@ Your task is to write a program which asks the user three times for a number and
 
 
 
+
 """
 Task 3 - Find the maximum number
 Your task is to write a program which asks the user five times for a number and prints the maximum of those numbers.
 """
+
+# Max = None
+
+# for i in range(5):
+    
+#     num = int(input('Enter number: '))
+    
+#     if Max == None:
+#         Max = num
+#     if num > Max:
+#         Max = num
+    
+        
+# print('Maximum of the numbers: ', Max)
+    
+
 
 # first = input('Enter first number: ')
 # second = input('Enter second number: ')
@@ -90,7 +128,13 @@ Your task is to write a program which prints all the divisors of a number. The n
 # for i in divisors: 
 #     if Num % i == 0 and Num >= i: 
 #         print(i)
+
+# Num = int(input('Enter Number : '))
+
+# for i in range(1, Num+1):
     
+#     if Num % i == 0:
+#         print(i)
 
 """
 Task 5 - Check if a number is even and divisible by 3
